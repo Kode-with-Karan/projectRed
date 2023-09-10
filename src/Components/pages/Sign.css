@@ -1,0 +1,256 @@
+.loginform{
+    width: 450px;
+    margin: auto;
+    border-radius: 10px;
+    padding: 40px;
+    transform: translate(0%, 15%);
+}
+.loginEmail{
+    border: 1px solid rgb(209, 209, 209);
+    border-radius: 10px;
+    padding: 40px;
+}
+.logoPass>.logo,
+.logoEmail>.logo{
+    width: fit-content;
+    margin: auto;
+}
+.loginEmail>h3{
+    width: fit-content;
+    padding-bottom: 0;
+    padding-top: 0px;
+    color: rgb(32,33,36);
+    font-size: 24px;
+    font-family: "Google Sans","Noto Sans Myanmar UI",arial,sans-serif;
+    font-weight: 400;
+    line-height: 1.3333;
+    margin-bottom: 0;
+    margin-top: 0;
+    word-break: break-word;
+    margin: auto;
+}
+.loginEmail>h5{
+    width: fit-content;
+    padding-bottom: 1px;
+    padding-top: 7px;
+    color: rgb(32,33,36);
+    font-size: 16px;
+    font-weight: 400;
+    letter-spacing: 0.1px;
+    line-height: 1.5;
+    margin: auto;
+}
+.loginEmail>form>input{
+    width: 90%;
+    margin: 30px auto 0 auto;
+    border-radius: 4px;
+    color: rgb(32,33,36);
+    font-size: 16px;
+    height: 28px;
+    padding: 13px 15px;
+    z-index: 1;
+    border: 1px solid rgb(185, 185, 185);
+    outline-color: rgb(26,115,232);
+}
+.loginEmail>a{
+    text-decoration: none;
+    font-weight: 500;
+    color: rgb(26,115,232);
+    margin-top: 10px;
+    display: block;
+}
+.loginEmail>p{
+    margin-top: 60px;
+    display: block;
+    color: gray;
+}
+.loginEmail>p>a{
+    text-decoration: none;
+    font-weight: 500;
+    color: rgb(26,115,232);
+    display: block;
+}
+.submit{
+    margin-top: 60px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 40px;
+}
+.submit>a{
+    text-decoration: none;
+    font-weight: 500;
+    color: rgb(26,115,232);
+    display: block;
+}
+.submit>button{
+    text-decoration: none;
+    font-weight: 500;
+    background-color: rgb(26,115,232);
+    display: block;
+    color: white;
+    /* pointer-events: none; */
+    border: rgb(26,115,232);
+    padding: 10px 25px;
+    border-radius: 6px;
+    font-weight: 600;
+    outline: none;
+}
+.submit>button>a{
+    text-decoration: none;
+    font-weight: 500;
+    background-color: rgb(26,115,232);
+    display: block;
+    color: white;
+    pointer-events: none;
+    border: rgb(26,115,232);
+    padding: 10px 25px;
+    border-radius: 6px;
+    font-weight: 600;
+    outline: none;
+}
+.options{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-top: 10px;
+}
+.options>.language{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.options>.language>p{
+    padding-right: 10px;
+}
+.options>.terms{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.options>.terms>p{
+    padding-left: 5px;
+    padding-right: 10px;
+}
+
+nav,footer{
+    display: none;
+}
+@media screen and (max-width: 600px) {
+    .loginform{
+        width: 100%;
+        transform: translate(0%, 0%);
+        padding: 0;
+    }
+    .loginEmail{
+        border: none;
+        border-radius: 10px;
+        padding: 20px;
+    }
+    .options{
+        padding: 20px;
+        flex-wrap: wrap;
+    }
+}
+
+
+/* Password page */
+
+.loginPass{
+    border: 1px solid rgb(209, 209, 209);
+    border-radius: 10px;
+    padding: 40px;
+}
+
+.loginPass>h3{
+    width: fit-content;
+    padding-bottom: 0;
+    padding-top: 0px;
+    color: rgb(32,33,36);
+    font-size: 24px;
+    font-family: "Google Sans","Noto Sans Myanmar UI",arial,sans-serif;
+    font-weight: 400;
+    line-height: 1.3333;
+    word-break: break-word;
+    margin: 10px auto;
+}
+.loginPass>h5{
+    display: flex;
+    align-items: center;
+    border: 1px solid rgb(200, 200, 200);
+    padding: 4px 6px;
+    width: fit-content;
+    color: rgb(32,33,36);
+    font-size: 16px;
+    font-weight: 400;
+    letter-spacing: 0.1px;
+    line-height: 1.5;
+    margin: auto;
+    border-radius: 50px;
+}
+.loginPass>h5>p{
+    padding: 0 5px;
+}
+
+.loginPass>p{
+    margin-top: 20px;
+    display: block;
+    font-size: 15px;
+}
+
+#password{
+    width: 90%;
+    margin: 60px auto 10px auto;
+    border-radius: 4px;
+    color: rgb(32,33,36);
+    font-size: 16px;
+    height: 28px;
+    padding: 13px 15px;
+    z-index: 1;
+    border: 1px solid rgb(185, 185, 185);
+    outline-color: rgb(26,115,232);
+}
+
+.loginPass>form>.submit>button{
+    text-decoration: none;
+    font-weight: 500;
+    background-color: rgb(26,115,232);
+    display: block;
+    color: white;
+    /* pointer-events: none; */
+    border: rgb(26,115,232);
+    padding: 0px;
+    border-radius: 6px;
+    font-weight: 600;
+    outline: none;
+}
+
+.loginPass>form>.submit>button>a{
+    text-decoration: none;
+    font-weight: 500;
+    background-color: rgb(26,115,232);
+    display: block;
+    color: white;
+    pointer-events: all;
+    border: rgb(26,115,232);
+    padding: 10px 25px;
+    border-radius: 6px;
+    font-weight: 600;
+    outline: none;
+}
+@media screen and (max-width: 600px) {
+    .loginform{
+        width: 100%;
+        transform: translate(0%, 0%);
+        padding: 0;
+    }
+    .loginPass{
+        border: none;
+        border-radius: 10px;
+        padding: 20px;
+    }
+    .options{
+        padding: 20px;
+        flex-wrap: wrap;
+    }
+}

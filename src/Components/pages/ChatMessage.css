@@ -1,0 +1,38 @@
+.messageBox{
+    display: flex;
+    flex-direction: row;
+    align-items: flex-end;
+    margin: 5px;
+}
+.messageBoxRight{
+    display: flex;
+    flex-direction: row-reverse;
+    align-items: flex-end;
+    margin: 5px;
+    justify-content: flex-start;
+}
+.name{
+    width: 10px;
+    height: 8px;
+    background-color: rgb(245 245 245);
+    padding: 6px 14px 17px 11px;
+    text-transform: capitalize;
+    border-radius: 50px;
+    margin: 0 5px;
+}
+.messageBox>p{
+    background-color: rgb(245 245 245);
+    width: fit-content;
+    max-width: 70%;
+    padding: 10px;
+    border-radius: 10px;
+    word-wrap: break-word;
+}
+.messageBoxRight>p{
+    background-color: rgb(245 245 245);
+    width: fit-content;
+    max-width: 70%;
+    padding: 10px;
+    border-radius: 10px;
+    word-wrap: break-word;
+}

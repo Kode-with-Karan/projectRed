@@ -1,0 +1,153 @@
+nav{
+    display: flex;
+}
+
+.switchChat{
+    display: none;
+    justify-content: center;
+    width: fit-content;
+    margin: 10px auto;
+}
+
+.switchChat>div{
+    padding: 5px 10px;
+    font-weight: bolder;
+    letter-spacing: 0.5px;
+}
+
+.switchChat>.activeLeft{
+    background-color: #adadad;
+    color: white;
+    border-radius: 10px 0 0 10px;
+}
+
+.switchChat>.activeRight{
+    background-color: #adadad;
+    color: white;
+    border-radius: 0px 10px 10px 0;
+}
+
+
+.chat{
+    display: flex;
+    width: 80%;
+    margin: 10px auto;
+    height: 80vh;
+}
+.chatUsers{
+    display: flex;
+    flex-direction: column;
+    background-color: rgb(245 245 245);
+    border-radius: 20px 0px 0 20px;
+    overflow-y: scroll;
+    overflow-x: hidden;
+    max-height: 80vh;
+}
+.chatUsers {
+    -ms-overflow-style: none;  /* Internet Explorer 10+ */
+    scrollbar-width: none;  /* Firefox */
+}
+.chatUsers::-webkit-scrollbar { 
+    display: none;  /* Safari and Chrome */
+}
+.chats{
+    max-height: 80vh;
+    width: 100%;
+    position: relative;
+    overflow: hidden;
+}
+.chatContainer{
+    max-height: 100%;
+    display: flex;
+    flex-direction: column;
+    border-radius: 10px;
+    overflow-y: scroll;
+    overflow-x: hidden;
+    width: 100%;
+    position: absolute;
+    bottom: 70px;
+    z-index: 1;
+}
+
+.chatContainer {
+    -ms-overflow-style: none;  /* Internet Explorer 10+ */
+    scrollbar-width: none;  /* Firefox */
+}
+.chatContainer::-webkit-scrollbar { 
+    display: none;  /* Safari and Chrome */
+}
+.inputField{
+    margin: 17px auto;
+    width: 95%;
+    position: absolute;
+    bottom: 0;
+    left: 20px;
+}
+.inputField::before{
+    content: "";
+    width: 100%;
+    height: 1px;
+    position: absolute;
+    top: -30%;
+    display: inline-block;
+    background-color: gray;
+    opacity: 0.4;
+}
+.inputField>input{
+    width: 89%;
+    padding: 4px;
+    font-size: 18px;
+    border: none;
+    outline: none;
+}
+.inputField>button{
+    width: 10%;
+    padding: 4px;
+    font-size: 18px;
+    background: transparent;
+    border: none;
+    outline: none;
+}
+
+@media screen and (max-width: 600px) {
+    .nav{
+        display: none;
+    }
+    .footer{
+        display: none;
+    }
+    .switchChat{
+        display: flex;
+    }
+    .chat{
+        overflow: hidden;
+        height: 98vh;    
+        width: 95%; 
+    }
+    .chats{
+        max-height: 100vh;   
+        display: none;  
+    }
+    .chatUsers{
+        width: 100%;
+        border-radius: 20px;
+        height: 100vh;
+    }
+    .chatContainer{
+        bottom: 50px;
+    }
+    .inputField{
+        margin: 0 auto;
+    }
+    .inputField::before {
+
+        margin: 0px -10px;
+    }
+    .inputField>input{
+        width: 85%;
+        padding: 4px;
+        font-size: 18px;
+        border: none;
+        outline: none;
+    }
+  }
